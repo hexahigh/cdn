@@ -1,3 +1,9 @@
+/* This is a simple javascript library that i made.
+It needs jquery to function.
+The ip grabber does not store the users ip anywhere.
+*/
+
+
 // Set delay to ms
 function delay(milliseconds){
   return new Promise(resolve => {

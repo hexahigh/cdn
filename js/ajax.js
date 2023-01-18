@@ -41,6 +41,7 @@ const controller = new AbortController()
 
 const timeoutId = setTimeout(() => controller.abort(), 5000)
 while(true){
+  await delay(10);
   fetch('https://t0m0t0w.github.io/backuprr/history.dat', {cache: "no-store"}, { signal: controller.signal }).then(response => {
   // completed request before timeout fired
 

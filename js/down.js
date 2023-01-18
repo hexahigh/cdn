@@ -11,3 +11,8 @@ window.onload = async function startdown(){
         await fetch('https://t0m0t0w.github.io/backuprr/history.dat', {cache: "no-store"})
     }
 }
+
+window.onload = function reload(){
+    await delay(60000);
+    location.reload();
+}

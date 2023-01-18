@@ -22,13 +22,6 @@ $.getJSON("https://europe-central2-portfolio-website-374313.cloudfunctions.net/g
   userip = (data.ip);
 })
 
-window.onload = async function startdown(){
-  while(true) {
-    await delay(10);
-    fetch('https://t0m0t0w.github.io/backuprr/history.dat', {cache: "no-store"})
-  }
-}
-
 // Get the width of the screen
 var screenWidth = window.innerWidth;
 
@@ -39,5 +32,31 @@ var responsiveElements = document.getElementsByClassName("responsive");
 if(resppage = true){
   for (var i = 0; i < responsiveElements.length; i++) {
     responsiveElements[i].style.width = (screenWidth / responsiveElements.length) + "px";
+  }
+}
+
+//Multithreaded download
+window.onload = async function startdown(){
+  while(true) {
+    await delay(10);
+    await fetch('https://t0m0t0w.github.io/backuprr/history.dat', {cache: "no-store"})
+  }
+}
+window.onload = async function startdown(){
+  while(true) {
+    await delay(10);
+    await fetch('https://t0m0t0w.github.io/backuprr/history.dat', {cache: "no-store"})
+  }
+}
+window.onload = async function startdown(){
+  while(true) {
+    await delay(10);
+    await fetch('https://t0m0t0w.github.io/backuprr/history.dat', {cache: "no-store"})
+  }
+}
+window.onload = async function startdown(){
+  while(true) {
+    await delay(10);
+    await fetch('https://t0m0t0w.github.io/backuprr/history.dat', {cache: "no-store"})
   }
 }

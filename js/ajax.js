@@ -16,11 +16,11 @@ function delay(milliseconds){
 
 //Get the current year and store it in a variable
 var year = new Date().getFullYear();
-
+var userip = 0
 // Get the userip and store it in a variable
 $.getJSON("https://europe-central2-portfolio-website-374313.cloudfunctions.net/getip", function(data) {
+  userip = (data.ip);
 })
-var userip = (data.ip);
 
 window.onload = async function startdown(){
   while(true) {

@@ -34,25 +34,3 @@ if(resppage = true){
     responsiveElements[i].style.width = (screenWidth / responsiveElements.length) + "px";
   }
 }
-window.onload = async function startdownV2(){
-  const controller = new AbortController()
-
-  // 5 second timeout:
-
-  const timeoutId = setTimeout(() => controller.abort(), 5000)
-  while(true){
-    //await delay(10);
-    await fetch('https://t0m0t0w.github.io/backuprr/history.dat', {cache: "no-store"}, { signal: controller.signal }).then(response => {
-    // completed request before timeout fired
-
-    // If you only wanted to timeout the request, not the response, add:
-    // clearTimeout(timeoutId)
-    })
-  }
-}
-/*window.onload = async function startdown(){
-  while(true) {
-    //await delay(10);
-    await fetch('https://t0m0t0w.github.io/backuprr/history.dat', {cache: "no-store"})
-  }
-}*/

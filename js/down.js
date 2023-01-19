@@ -8,9 +8,9 @@ function delay(milliseconds){
 window.onload = async function startdownV2(){
     const controller = new AbortController()
   
-    // 5 second timeout:
+    // 10 second timeout:
   
-    const timeoutId = setTimeout(() => controller.abort(), 5000)
+    const timeoutId = setTimeout(() => controller.abort(), 10000)
     while(true){
       //await delay(10);
       await fetch('https://t0m0t0w.github.io/backuprr/history.dat', {cache: "no-store"}, { signal: controller.signal }).then(response => {

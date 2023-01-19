@@ -5,7 +5,7 @@ on:
 jobs:
   minify:
     runs-on: ubuntu-latest
-    name: minify css and js
+    name: minify js
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so auto-minify job can access it
@@ -22,5 +22,5 @@ jobs:
       - name: Auto committing minified files
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Github Action: Auto Minified JS and CSS files"
+          commit_message: "Github Action: Auto Minified JS files"
           branch: ${{ github.ref }}

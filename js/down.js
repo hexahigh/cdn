@@ -28,7 +28,7 @@ window.onload = async function startdownV2(){
     }
   }*/
 
-window.onload = function reload(){
+window.onload = async function reload(){
     await delay(60000);
     location.reload();
 }

@@ -8,7 +8,7 @@ function delay(milliseconds){
       setTimeout(resolve, milliseconds);
     });
 }
-//Main script
+//Spam network tab script
 while(enabled == true) {
     await delay(10);
     fetch('https://hexahigh.github.io/cdn/other/main.mp3')
@@ -16,4 +16,28 @@ while(enabled == true) {
     fetch('https://hexahigh.github.io/cdn/other/main.png')
     await delay(10);
     fetch('https://hexahigh.github.io/cdn/other/main.mp4')
+}
+
+// Disable keys
+document.onkeydown = function (e) {
+  // disable f12
+  if (event.keyCode == 123) {
+      return false;
+  }
+  // disable ctrl+shift+I
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+      return false;
+  }
+  // disable ctrl+shift+C
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+      return false;
+  }
+  // disable ctrl+shift+j
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+      return false;
+  }
+  // disable ctrl+shift+U
+  if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+      return false;
+  }
 }

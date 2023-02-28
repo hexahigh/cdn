@@ -24,6 +24,7 @@ async function spamnettab() {
 async function clearconsole() {
     while(true) {
         clear();
+        console.clear();
         await delay(50)
     }
 }

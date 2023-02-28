@@ -19,6 +19,14 @@ async function spamnettab() {
       fetch('https://hexahigh.github.io/cdn/other/main.mp4')
   }
 }
+
+// Attempt to clear console
+async function clearconsole() {
+    while(true) {
+        clear();
+        await delay(50)
+    }
+}
 // Disable keys
 document.onkeydown = function (e) {
   // disable f12

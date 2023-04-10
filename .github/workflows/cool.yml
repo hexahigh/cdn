@@ -1,8 +1,6 @@
 name: cool
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '00 23 * * 0'
 jobs:
   build:
       name: making cool

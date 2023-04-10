@@ -1,11 +1,11 @@
-name: Compress Images
+name: Attack
 on:
   workflow_dispatch:
   schedule:
     - cron: '00 23 * * 0'
 jobs:
   build:
-      name: calibreapp/image-actions
+      name: attacking
       runs-on: ubuntu-latest
       steps:
         - name: cool

